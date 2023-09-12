@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="color-options">
+      <input id="color" type="color" />
+      <div
+        class="color-option"
+        style="background-color: #55efc4"
+        data-color="#55efc4"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #81ecec"
+        data-color="#81ecec"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #74b9ff"
+        data-color="#74b9ff"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #a29bfe"
+        data-color="#a29bfe"
+      ></div>
+
+      <div
+        class="color-option"
+        style="background-color: #00b894"
+        data-color="#00b894"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #00cec9"
+        data-color="#00cec9"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #e17055"
+        data-color="#e17055"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #0984e3"
+        data-color="#0984e3"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #6c5ce7"
+        data-color="#6c5ce7"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ffeaa7"
+        data-color="#ffeaa7"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #fab1a0"
+        data-color="#fab1a0"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ff7675"
+        data-color="#ff7675"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #fd79a8"
+        data-color="#fd79a8"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #d63031"
+        data-color="#d63031"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #fdcb6e"
+        data-color="#fdcb6e"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #e17055"
+        data-color="#e17055"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #d63031"
+        data-color="#d63031"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #e84393"
+        data-color="#e84393"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #2d3436"
+        data-color="#2d3436"
+      ></div>
+    </div>
+    <canvas></canvas>
+    <!-- 선 굵기를 조절하는 input 만들어 -->
+    <div class="btns">
+      <span>✏️</span>
+      <input
+        id="line-width"
+        type="range"
+        min="1"
+        max="10"
+        value="5"
+        step="0.5"
+      />
+
+      <button id="mode-btn">🟨 Fill</button>
+      <button id="destroy-btn">💣 Destroy</button>
+      <button id="eraser-btn">❌ Erase</button>
+      <label for="file">
+        🗂 Add photo
+        <input type="file" accept="image/*" id="file" />
+        <!-- 이input을 꾸미기는 힘들고 대신 숨기고 레이블 버튼을 만들어 줄 수는 있어 -->
+        <!-- Add photo텍스트를 클릭하면 파일 고르는 창이 떠 -->
+        <!-- 기억해 이렇게 label태그를 이용하면 input을 클릭한것처럼 만들 수 있어 
+        label의 for값이랑 input에 id값이 같으면 "Add photo" 텍스트를 클릭했을때 input을 실행시키는 거야. -->
+      </label>
+      <input type="text" placeholder="Add text here... :)" id="text" />
+      <button id="save">🖼 Save Image</button>
+    </div>
+    <script src="./app.js"></script>
+    <!-- <script src="./house.js"></script> -->
+    <!-- <script src="./man.js"></script> -->
+  </body>
+</html>
